@@ -1,0 +1,35 @@
+name: Build README
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 16.13
+    - run: npm install
+    
+    # Run script
+    - run: Update READE
+      run: |-
+        node updateReadme.js
+
+    # Commit changes
+    - name: Commit and push if changed
+      run: |-
+        git add .
+        git diff
+        git config --global user.email "github-action-bot@example.com"
+        git config --globl user.name "Github Action Bot"
+        git commit -m "Updated README" || echo "NO changes to commit"
+        git push
