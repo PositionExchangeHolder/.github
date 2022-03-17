@@ -1,6 +1,6 @@
 
   ### Position Token (POSI)
-  - Price: $0.64
+  - Price: $0.67
   - Max Supply: 0
   - Total Supply: 10,100,013.381
   - Circulating Supply: 10,100,013.381
