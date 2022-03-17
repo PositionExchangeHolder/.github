@@ -20,7 +20,7 @@ jobs:
     - run: npm install
     
     # Run script
-    - run: Update READE
+    - name: Update README
       run: |-
         node updateReadme.js
 
