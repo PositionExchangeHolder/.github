@@ -16,6 +16,7 @@ const updateReadme = async () => {
             totalMinted
             totalBurned
             totalHolders
+            totalTransactions
             prices {
               priceInBUSD
               totalVolumeInBUSD
@@ -37,6 +38,7 @@ const updateReadme = async () => {
       circulating_supply: formatter.formatNumber(positionToken?.totalMinted),
       total_burn: formatter.formatNumber(positionToken?.totalBurned),
       total_holders: Number(positionToken?.totalHolders).toLocaleString(),
+      total_transactions: Number(positionToken?.totalTransactions).toLocaleString(),
       volume_24h: formatter.formatVolume(positionToken?.prices.totalVolumeInBUSD),
       updated_at: formatter.formatTimestamp(positionToken?.updatedTimestamp)
     }

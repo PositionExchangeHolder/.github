@@ -5,7 +5,8 @@
   - Total Supply: 10,100,013.381
   - Circulating Supply: 10,100,013.381
   - Total Burn: 0
-  - Holders: 41,169
-  - Volume (24h): $23,537.52
+  - Holders: 41,187
+  - Transactions: 134,636
+  - Volume (24h): $26,921.27
 
-  > updated_at: Jul 30, 2021 4:20 PM
+  > updated_at: Jul 30, 2021 5:10 PM
