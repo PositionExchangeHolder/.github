@@ -2,7 +2,7 @@ name: Build README
 
 on:
   schedule:
-    - cron: ${{ secrets.ACTION_SCHEDULE_CRON }}
+    - cron: '0 */6 * * *'
   push:
     branches:
       - main
