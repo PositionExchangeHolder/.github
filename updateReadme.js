@@ -4,7 +4,7 @@ const { render } = require('mustache')
 const template = require('./template')
 const formatter = require('./formatter')
 
-const API = 'https://api.thegraph.com/subgraphs/name/positionexchanger/ttoken'
+const API = 'https://api.thegraph.com/subgraphs/name/gafranslotteria/position-token'
 
 const updateReadme = async () => {
   try {
