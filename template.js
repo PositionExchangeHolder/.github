@@ -7,7 +7,7 @@ const template = `
   - Total Burn: {{total_burn}}
   - Holders: {{total_holders}}
   - Transactions: {{total_transactions}}
-  - Volume (24h): {{volume_24h}}
+  - Volume: {{volume_24h}}
 
   > updated_at: {{updated_at}}
 `
