@@ -1,12 +1,12 @@
 
   ### Position Token (POSI)
-  - Price: $3.73
+  - Price: $3.66
   - Max Supply: 100,000,000
-  - Total Supply: 17,271,174.808
-  - Circulating Supply: 17,271,174.808
+  - Total Supply: 19,671,174.808
+  - Circulating Supply: 19,671,174.808
   - Total Burn: 0
-  - Holders: 301,826
-  - Transactions: 1,703,079
-  - Volume: $106,311,043.40
+  - Holders: 307,372
+  - Transactions: 1,987,286
+  - Volume: $133,335,711.08
 
-  > updated_at: Oct 26, 2021 1:04 PM
+  > updated_at: Nov 10, 2021 6:46 PM
