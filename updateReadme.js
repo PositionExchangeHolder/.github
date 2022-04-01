@@ -3,6 +3,7 @@ const axios = require('axios')
 const { render } = require('mustache')
 const template = require('./template')
 const formatter = require('./formatter')
+const { addTokenDayData } = require('./helper')
 
 const API = 'https://api.thegraph.com/subgraphs/name/gafranslotteria/position-token'
 
@@ -23,6 +24,11 @@ const updateReadme = async () => {
             }
             updatedTimestamp
           }
+          positionTokenDayDatas(first: 8, orderBy: "createdBlockNumber", orderDirection: "desc") {
+            id
+            priceInBUSD
+            dailyVolumeInBUSD
+          }
         }
       `
     }, {
@@ -30,8 +36,12 @@ const updateReadme = async () => {
         'Content-Type': 'application/json'
       }
     })
+    
     const positionToken = res.data.data?.positionToken
-    const data = {
+    const positionTokenDayDatas = res.data.data?.positionTokenDayDatas
+    const dayDatas = formatter.formatTokenDayDatas(positionTokenDayDatas)
+    
+    let data = {
       price: formatter.formatPrice(positionToken?.prices.priceInBUSD),
       max_supply: formatter.formatNumber(positionToken?.maxSupply),
       total_supply: formatter.formatNumber(positionToken?.totalMinted),
@@ -40,8 +50,10 @@ const updateReadme = async () => {
       total_holders: Number(positionToken?.totalHolders).toLocaleString(),
       total_transactions: Number(positionToken?.totalTransactions).toLocaleString(),
       volume_24h: formatter.formatVolume(positionToken?.prices.totalVolumeInBUSD),
-      updated_at: formatter.formatTimestamp(positionToken?.updatedTimestamp)
+      updated_at: formatter.formatTimestamp(positionToken?.updatedTimestamp),
     }
+    data = addTokenDayData(data, dayDatas)
+    
     const output = render(template, data)
 
     fs.readFile('./profile/README.md', 'utf-8', (err) => {
