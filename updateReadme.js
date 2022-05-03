@@ -45,7 +45,7 @@ const updateReadme = async () => {
       price: formatter.formatPrice(positionToken?.prices.priceInBUSD),
       max_supply: formatter.formatNumber(positionToken?.maxSupply),
       total_supply: formatter.formatNumber(positionToken?.totalMinted),
-      circulating_supply: formatter.formatNumber(positionToken?.totalMinted),
+      circulating_supply: formatter.formatNumber(positionToken?.totalMinted - positionToken?.totalBurned),
       total_burn: formatter.formatNumber(positionToken?.totalBurned),
       total_holders: Number(positionToken?.totalHolders).toLocaleString(),
       total_transactions: Number(positionToken?.totalTransactions).toLocaleString(),
