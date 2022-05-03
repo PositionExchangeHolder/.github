@@ -3,7 +3,7 @@
   - Price: $0.48
   - Max Supply: 100,000,000
   - Total Supply: 62,371,180.587
-  - Circulating Supply: 62,371,180.587
+  - Circulating Supply: 62,371,175.761
   - Total Burn: 4.827
   - Holders: 406,538
   - Transactions: 4,700,708
