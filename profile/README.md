@@ -1,13 +1,13 @@
 
   ### Position Token (POSI)
   - Price: $0.32
-  - Market Cap: $21,282,687,181,999,657,000,000,000.00
+  - Market Cap: 21,282,687.182
   - Max Supply: 100,000,000
   - Total Supply: 67,271,180.587
   - Circulating Supply: 67,271,175.761
   - Total Burn: 4.827
   - Holders: 407,233
-  - Transactions: 4,797,866
+  - Transactions: 4,797,867
   - Volume: $360,794,624.90
 
   **7D Price & Volume**
