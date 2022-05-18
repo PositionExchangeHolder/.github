@@ -43,7 +43,7 @@ const updateReadme = async () => {
     
     let data = {
       price: formatter.formatPrice(positionToken?.prices.priceInBUSD),
-      marketCap: formatter.formatPrice(positionToken?.prices.priceInBUSD * (positionToken?.totalMinted - positionToken?.totalBurned)),
+      marketCap: formatter.formatNumber(positionToken?.prices.priceInBUSD * (positionToken?.totalMinted - positionToken?.totalBurned)),
       max_supply: formatter.formatNumber(positionToken?.maxSupply),
       total_supply: formatter.formatNumber(positionToken?.totalMinted),
       circulating_supply: formatter.formatNumber(positionToken?.totalMinted - positionToken?.totalBurned),
