@@ -1,7 +1,7 @@
 
   ### Position Token (POSI)
   - Price: $0.32
-  - Market Cap: 
+  - Market Cap: $21,282,687,181,999,657,000,000,000.00
   - Max Supply: 100,000,000
   - Total Supply: 67,271,180.587
   - Circulating Supply: 67,271,175.761
