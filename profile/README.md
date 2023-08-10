@@ -6,8 +6,8 @@
   - Total Supply: 90,971,209.005
   - Circulating Supply: 90,191,284.029
   - Total Burn: 779,924.976
-  - Holders: 733,172
-  - Transactions: 5,714,443
+  - Holders: 733,173
+  - Transactions: 5,714,454
   - Volume: $392,150,615.32
 
   **7D Price & Volume**
@@ -16,4 +16,4 @@
   | Price | $0.02 🔻 | $0.02 🔻 | $0.02 🚀 | $0.02 🔻 | $0.02 🚀 | $0.02 🚀 | $0.02 🔻 |
   | Volume | 2.76K 🔻 | 6.54K 🚀 | 6.86K 🚀 | 3.45K 🔻 | 1.98K 🔻 | 3.82K 🚀 | 33.143841858197426 🔻 |
 
-  > updated_at: Aug 10, 2023 12:50 AM
+  > updated_at: Aug 10, 2023 5:01 AM
